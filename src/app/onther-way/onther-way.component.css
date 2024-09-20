@@ -1,0 +1,51 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .country-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  h2{
+    color:#ff6347;
+  }
+  strong{
+    color:#ff6347;
+  }
+  .country-list li {
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .country-list li:hover {
+    background-color: #ff6347; /* Hover color */
+    color: white;
+  }
+  
+  .country-list li.selected {
+    background-color: #007bff; /* Selected country color */
+    color: white;
+  }
+  
+  .city-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .city-list li {
+    padding: 8px;
+    background-color: #e7e7e7;
+    transition: background-color 0.3s;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .city-list li:hover {
+    background-color: #4682b4; /* Hover color for cities */
+    color: white;
+  }
+  

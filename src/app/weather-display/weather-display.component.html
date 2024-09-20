@@ -1,0 +1,52 @@
+<!-- src/app/weather/weather.component.html -->
+<nav class="navbar">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/icon3.png" alt="Weather Icon" class="film-icon">
+ <span class="navbar-text">
+  Weather Report
+ </span>
+  </a>
+</nav>
+
+<div class="container">
+  <h2>Search Weather</h2>
+  
+  <select [(ngModel)]="selectedCountry" (change)="onCountryChange()" class="form-control mb-2">
+    <option value="" disabled>Select a country</option>
+    <option *ngFor="let country of countryList" [value]="country.code">{{ country.name }} ({{country.code}})</option>
+  </select>
+  
+  <select [(ngModel)]="selectedCity" class="form-control mb-2" [disabled]="!selectedCountry">
+    <option value="" disabled>Select a city</option>
+    <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+  </select>
+
+  <button (click)="searchWeather()" class="btn btn-success">Search</button>
+  <button (click)="clear()" class="btn btn-dark ml-2">Clear</button>
+
+  <p *ngIf="errorMsg" class="text-dark">{{ errorMsg }}</p>
+  <div *ngIf="isLoading">Loading weather data...</div>
+
+  <div *ngIf="weatherData && !isLoading" class="weather-result mt-4">
+    <h3>Weather in {{ weatherData.name }}, {{ weatherData.sys.country }}</h3>
+    <p><strong>Temperature:</strong> {{ weatherData.main.temp }}°C</p>
+    <p><strong>Weather:</strong> {{ weatherData.weather[0].description }}</p>
+    <p><strong>Humidity:</strong> {{ weatherData.main.humidity }}%</p>
+    <p><strong>Wind Speed:</strong> {{ weatherData.wind.speed }} m/s</p>
+  </div>
+  
+</div>
+
+<!-- <div class="check_ontherway">
+  <button routerLink="/checkotherway" class="btn btn-danger">
+    <strong>Check Onther Way</strong>
+  </button>
+</div> -->
+
+<div class="check_ontherway">
+  <button  class="btn btn-danger" (click)="anotherWay()">
+    <strong>Check Onther Way</strong>
+  </button>
+</div>
+
+

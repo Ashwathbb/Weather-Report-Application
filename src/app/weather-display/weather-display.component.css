@@ -1,0 +1,129 @@
+/* src/app/weather/weather.component.css */
+.navbar {
+  background-color:  #44443d;
+  padding: 10px;
+  margin-bottom:20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar-text
+{
+  font-size:1.5rem;
+  font-weight:bold;
+  text-align:center;
+  color:#fcfefff1;
+  transition: color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.film-icon  {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  
+}
+
+.container {
+  
+  background-color:  #5cc3e2e8;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom:20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.weather-result {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-result h3 {
+  color: #2452cf;
+}
+
+
+.weather-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .weather-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  /* src/app/components/weather-display/weather-display.component.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .weather-result {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .check_ontherway
+  {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-left: 740px;
+    margin-top: 100px;
+    margin-right: 740px;
+    text-align: center;
+  }
+  .btn.btn-dark .ml-2
+  {
+    padding-left:10px;
+    padding-right:10px;
+  }
